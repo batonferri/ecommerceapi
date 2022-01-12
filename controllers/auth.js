@@ -1,6 +1,8 @@
 const User = require("../models/User");
 const CryptoJS = require("crypto-js");
 const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const registerUser = async (req, res) => {
   const newUser = new User({
